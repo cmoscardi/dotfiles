@@ -1,3 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/home/christian/python_stuff/lyricism'
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/christian/real-cheap-eats/app/assets/javascripts'
+let g:netrw_dirhist_2='/home/christian/data_incubator_challenge/git_server.git/hooks'
+let g:netrw_dirhist_3='/home/christian/real-cheap-eats/.git'
+let g:netrw_dirhist_4='/home/christian/data_incubator_challenge/part_2/git_server.git'
+let g:netrw_dirhist_5='/home/christian/data_incubator_challenge/part_2/git_server.git/hooks'
+let g:netrw_dirhist_6='/home/christian/google-app-engine/website'
+let g:netrw_dirhist_7='/home/christian/data_incubator/datacourse/.git_hooks'
