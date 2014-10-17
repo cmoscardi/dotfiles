@@ -24,7 +24,7 @@ servers = (
   { address = "irc.link-net.org"; chatnet = "LinkNet"; port = "6667"; },
   { address = "silc.silcnet.org"; chatnet = "SILC"; port = "706"; },
   {
-    address = "irc.what.cd";
+    address = "irc.what-network.net";
     chatnet = "whatcd";
     port = "6667";
     use_ssl = "no";
@@ -111,7 +111,8 @@ channels = (
   { name = "#forumreports"; chatnet = "whatcd"; autojoin = "yes"; },
   { name = "#math"; chatnet = "whatcd"; autojoin = "yes"; },
   { name = "#room"; chatnet = "whatcd"; autojoin = "yes"; },
-  { name = "#windie"; chatnet = "whatcd"; autojoin = "yes"; }
+  { name = "#windie"; chatnet = "whatcd"; autojoin = "yes"; },
+  { name = "#jazz"; chatnet = "whatcd"; autojoin = "yes"; }
 );
 
 aliases = {
@@ -280,20 +281,6 @@ statusbar = {
         barend = { priority = "100"; alignment = "right"; };
       };
     };
-    awl_1 = {
-      items = {
-        barstart = { priority = "100"; };
-        awl_1 = { };
-        barend = { priority = "100"; alignment = "right"; };
-      };
-    };
-    awl_2 = {
-      items = {
-        barstart = { priority = "100"; };
-        awl_2 = { };
-        barend = { priority = "100"; alignment = "right"; };
-      };
-    };
   };
 };
 settings = {
@@ -305,8 +292,8 @@ settings = {
   };
   "fe-text" = { actlist_sort = "refnum"; };
   "perl/core/scripts" = {
-    nicklist_height = "38";
-    nicklist_width = "25";
+    nicklist_height = "56";
+    nicklist_width = "31";
     openurl_app_http = "/usr/bin/chromium --new-window $1";
   };
 };
@@ -321,7 +308,6 @@ mainwindows = {
 hilights = (
   { text = "cluck_u"; nick = "yes"; word = "yes"; },
   { text = "cluck"; nick = "yes"; word = "yes"; },
-  { text = "!mod"; nick = "yes"; word = "yes"; },
   { text = "reported a thread"; nick = "yes"; word = "yes"; }
 );
 keyboard = (
