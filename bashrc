@@ -11,9 +11,10 @@ alias ls='ls --color=auto'
 alias nl='cat /home/christian/.irssi/nicklistfifo'
 alias rce='rvm use 2.0.0@real-cheap-eats'
 alias singlescreen='xrandr --output DP1 --off'
-alias dualscreen='xrandr --output DP1 --mode 1920x1080  --right-of LVDS1'
+alias dualscreen='xrandr --output DP1 --mode 1920x1200  --right-of LVDS1'
 alias addbox='sshfs seedbox:/home/christian/raid /home/christian/seedbox'
 alias lockscreen='xscreensaver-command --lock'
+alias freedompop='sudo ip route add default via 192.168.14.0'
 PS1='[\u@\h \W]\$ '
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.gem/ruby/2.1.0/bin
@@ -22,5 +23,7 @@ export PATH
 source ~/.profile
 source ~/.tmuxinator.bash
 alias rsync_digitalocean="rsync -r -a --exclude-from /home/christian/data_incubator/datacourse/.rsync_utils/exclude.txt -e 'ssh -l vagrant' /home/christian/data_incubator/datacourse/ digitalocean:/vagrant/"                                    
-DO_API_KEY=`cat $HOME/data_incubator/datacourse/do_token`
+DO_API_KEY=`cat $HOME/data_incubator/provisioning/do_token`
+GH_API_KEY=`cat $HOME/data_incubator/provisioning/gh_token`
 export DO_API_KEY
+export GH_API_KEY
